@@ -30,3 +30,8 @@ Add notes
 Search by title
 
 ![search](https://user-images.githubusercontent.com/70321297/127063695-e5014eb2-9ec9-4de1-a910-a48a6e14fdea.jpeg)
+
+
+Delete item
+
+![delete](https://user-images.githubusercontent.com/70321297/127064966-fef4316f-bc69-457d-b9d0-d36e16b97106.jpeg)
