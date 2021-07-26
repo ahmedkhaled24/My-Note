@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNotes"
+    android:background="@color/gray">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_layout"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="@color/colorAccent">
+
+                <EditText
+                    android:id="@+id/edTitle"
+                    android:background="@drawable/background_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="@font/manrope_medium"
+                    android:hint="@string/title_text"
+                    android:inputType="textPersonName"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_layout"
+                app:boxBackgroundMode="outline"
+                android:layout_margin="10dp">
+
+                <EditText
+                    android:background="@drawable/background_layout"
+                    android:id="@+id/edDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="@font/manrope_medium"
+                    android:hint="@string/description_text"
+                    android:paddingBottom="130dp"
+                    android:inputType="textMultiLine"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/btn_layout_style"
+                android:fontFamily="@font/manrope_bold"
+                android:text="@string/save_text"
+                android:onClick="btnSave"
+                android:layout_gravity="center"/>
+
+
+<!--            <Button-->
+<!--                android:id="@+id/btnBack"-->
+<!--                android:textColor="#ffffff"-->
+<!--                android:layout_width="160dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:textSize="20sp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:background="@drawable/btn_back_style"-->
+<!--                android:fontFamily="@font/manrope_bold"-->
+<!--                android:text="@string/back_text"-->
+<!--                android:layout_gravity="center" />-->
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:weightSum="2">-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btnSave"-->
+<!--            android:layout_width="140dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_marginStart="12dp"-->
+<!--            android:layout_marginEnd="50dp"-->
+<!--            android:textColor="#ffffff"-->
+<!--            android:textSize="20sp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@drawable/btn_layout_style"-->
+<!--            android:fontFamily="@font/manrope_bold"-->
+<!--            android:text="Save"/>-->
+
+
+<!--        <Button-->
+<!--            android:id="@+id/btnBack"-->
+<!--            android:layout_weight="1"-->
+<!--            android:textColor="#ffffff"-->
+<!--            android:layout_width="140dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_marginEnd="12dp"-->
+<!--            android:textSize="20sp"-->
+<!--            android:background="@drawable/btn_back_style"-->
+<!--            android:fontFamily="@font/manrope_bold"-->
+<!--            android:text="Back" />-->
+<!--        -->
+<!--    </LinearLayout>-->
+
+
+
+
+    <!--    <ScrollView-->
+<!--        android:id="@+id/scrollView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center"-->
+<!--            android:orientation="vertical"-->
+<!--            android:background="#9B9B9B">-->
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    android:id="@+id/textInputLayout"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="#ffffff"-->
+<!--                    app:boxBackgroundMode="outline"-->
+<!--                    app:boxStrokeColor="@color/colorAccent"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent"-->
+<!--                    app:layout_constraintVertical_bias="0.13999999"-->
+<!--                    android:layout_marginTop="8dp">-->
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/edTitle"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:ems="10"-->
+<!--                        android:fontFamily="@font/manrope_medium"-->
+<!--                        android:hint="Title"-->
+<!--                        android:inputType="textPersonName"-->
+<!--                        android:textSize="16sp" />-->
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    android:id="@+id/textInputLayout2"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="#ffffff"-->
+<!--                    app:boxBackgroundMode="outline"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="@+id/textInputLayout"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout"-->
+<!--                    app:layout_constraintVertical_bias="0.19999999">-->
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/edDesc"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:ems="10"-->
+<!--                        android:fontFamily="@font/manrope_medium"-->
+<!--                        android:gravity="start|top"-->
+<!--                        android:hint="Description"-->
+<!--                        android:paddingBottom="40dp"-->
+<!--                        android:inputType="textMultiLine"-->
+<!--                        android:textSize="16sp" />-->
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+
+<!--                <Button-->
+<!--                    android:id="@+id/btnSave"-->
+<!--                    android:layout_width="120dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="right"-->
+<!--                    android:layout_marginTop="40dp"-->
+<!--                    android:layout_marginBottom="8dp"-->
+<!--                    android:fontFamily="@font/manrope_bold"-->
+<!--                    android:text="Save"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintHorizontal_bias="1.0"-->
+<!--                    app:layout_constraintStart_toStartOf="@+id/textInputLayout2"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />-->
+
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+
+<!--        </LinearLayout>-->
+<!--    </ScrollView>-->
+
+
+
+
+
+</FrameLayout>

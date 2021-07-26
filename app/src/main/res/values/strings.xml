@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Note</string>
+    <string name="back_text">Back</string>
+    <string name="save_text">Save</string>
+    <string name="description_text">Description</string>
+    <string name="title_text">Title</string>
+    <string name="textview_text">TextView</string>
+</resources>

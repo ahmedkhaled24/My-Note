@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">مذكراتي</string>
+    <string name="back_text">رجوع</string>
+    <string name="save_text">حفظ</string>
+    <string name="description_text">الموضوع</string>
+    <string name="title_text">العنوان</string>
+    <string name="textview_text">TextView</string>
+</resources>
