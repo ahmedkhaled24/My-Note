@@ -1,7 +1,9 @@
 # My-Note-App
 
 This app is for writing and keeping notes
+
 It has the ability to add, delete, modify and search
+
 Using: Splash, Material Design, ListView, Searching and SQLite
 
 Logo
